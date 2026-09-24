@@ -1,0 +1,11 @@
+{
+  "agent_id": "SECURITY_MZ",
+  "rango": "especialista",
+  "reporta_a": "MANAGER_MZ4_BACKEND",
+  "modulo": "backend",
+  "seccion": "seguridad",
+  "credential_id": "cred_security_mz",
+  "compuerta": null,
+  "equipo": [],
+  "tareas": "TAREAS.md"
+}

@@ -1,0 +1,17 @@
+{
+  "agent_id": "MANAGER_MZ2_DESIGN",
+  "rango": "gerente",
+  "reporta_a": "SUPER_MANAGER_MZ0",
+  "modulo": "diseno",
+  "seccion": "diseno",
+  "credential_id": "cred_manager_mz2_design",
+  "compuerta": "DESIGN_APPROVED",
+  "equipo": [
+    "APPLE_REVIEWER_MZ",
+    "GOOGLE_REVIEWER_MZ",
+    "SAMSUNG_REVIEWER_MZ",
+    "MACOS_REVIEWER_MZ",
+    "CRITIC_MZ"
+  ],
+  "tareas": "TAREAS.md"
+}

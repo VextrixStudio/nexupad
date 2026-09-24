@@ -1,0 +1,11 @@
+{
+  "agent_id": "FRONTEND_CORE_MZ",
+  "rango": "especialista",
+  "reporta_a": "MANAGER_MZ3_FRONTEND",
+  "modulo": "frontend",
+  "seccion": "nucleo-frontend",
+  "credential_id": "cred_frontend_core_mz",
+  "compuerta": null,
+  "equipo": [],
+  "tareas": "TAREAS.md"
+}

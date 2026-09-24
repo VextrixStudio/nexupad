@@ -1,0 +1,1622 @@
+{
+  "version": 1,
+  "descripcion": "Alcance lógico por agente. No contiene secretos. La especificación manda; esta matriz lo opera.",
+  "agentes": {
+    "SUPER_MANAGER_MZ0": {
+      "rango": "comando",
+      "reporta_a": null,
+      "modulo": "comando",
+      "seccion": "comando",
+      "escritura": [
+        "agentes/SUPER_MANAGER_MZ0/entregables/",
+        "agentes/SUPER_MANAGER_MZ0/notas/",
+        "memoria/"
+      ],
+      "lectura": [
+        "*"
+      ],
+      "lectura_denegada": [
+        "permisos/secretos/"
+      ],
+      "puede_asignar_a": [
+        "MANAGER_MZ1_RESEARCH",
+        "MANAGER_MZ2_DESIGN",
+        "MANAGER_MZ3_FRONTEND",
+        "MANAGER_MZ4_BACKEND",
+        "MANAGER_MZ5_QA"
+      ],
+      "puede_entregar_a": [],
+      "puede_revisar_a": [],
+      "puede_escalar_a": [],
+      "puede_decidir_a": [
+        "MANAGER_MZ1_RESEARCH",
+        "MANAGER_MZ2_DESIGN",
+        "MANAGER_MZ3_FRONTEND",
+        "MANAGER_MZ4_BACKEND",
+        "MANAGER_MZ5_QA"
+      ],
+      "tipos_mensaje": [
+        "asignacion",
+        "decision"
+      ]
+    },
+    "MANAGER_MZ1_RESEARCH": {
+      "rango": "gerente",
+      "reporta_a": "SUPER_MANAGER_MZ0",
+      "modulo": "investigacion",
+      "seccion": "investigacion",
+      "escritura": [
+        "agentes/MANAGER_MZ1_RESEARCH/entregables/",
+        "agentes/MANAGER_MZ1_RESEARCH/notas/",
+        "memoria/RESEARCH.md"
+      ],
+      "lectura": [
+        "README.md",
+        "agentes.md",
+        "agentes/INDICE.md",
+        "agentes/MANAGER_MZ1_RESEARCH/",
+        "memoria/",
+        "canal/estados/",
+        "canal/registro/",
+        "canal/compuertas/",
+        "canal/bandeja/MANAGER_MZ1_RESEARCH/",
+        "canal/ejemplos/",
+        "canal/README.md",
+        "canal/protocolo.md",
+        "canal/flujo.md",
+        "permisos/README.md",
+        "permisos/ALCANCE.md",
+        "permisos/matriz.json",
+        "permisos/credenciales.json",
+        "permisos/huellas.json",
+        "permisos/secretos/README.md",
+        "agentes/BUSCADOR_MZ1/",
+        "agentes/ANALYST_MZ2/",
+        "agentes/TREND_MZ3/",
+        "agentes/SOURCE_VALIDATOR_MZ4/",
+        "canal/tareas/"
+      ],
+      "lectura_denegada": [
+        "permisos/secretos/"
+      ],
+      "puede_asignar_a": [
+        "BUSCADOR_MZ1",
+        "ANALYST_MZ2",
+        "TREND_MZ3",
+        "SOURCE_VALIDATOR_MZ4"
+      ],
+      "puede_entregar_a": [
+        "SUPER_MANAGER_MZ0"
+      ],
+      "puede_revisar_a": [],
+      "puede_escalar_a": [
+        "SUPER_MANAGER_MZ0"
+      ],
+      "puede_decidir_a": [],
+      "tipos_mensaje": [
+        "asignacion",
+        "handoff",
+        "conflicto"
+      ]
+    },
+    "MANAGER_MZ2_DESIGN": {
+      "rango": "gerente",
+      "reporta_a": "SUPER_MANAGER_MZ0",
+      "modulo": "diseno",
+      "seccion": "diseno",
+      "escritura": [
+        "agentes/MANAGER_MZ2_DESIGN/entregables/",
+        "agentes/MANAGER_MZ2_DESIGN/notas/",
+        "memoria/DESIGN_SYSTEM.md",
+        "memoria/UX_DECISIONS.md"
+      ],
+      "lectura": [
+        "README.md",
+        "agentes.md",
+        "agentes/INDICE.md",
+        "agentes/MANAGER_MZ2_DESIGN/",
+        "memoria/",
+        "canal/estados/",
+        "canal/registro/",
+        "canal/compuertas/",
+        "canal/bandeja/MANAGER_MZ2_DESIGN/",
+        "canal/ejemplos/",
+        "canal/README.md",
+        "canal/protocolo.md",
+        "canal/flujo.md",
+        "permisos/README.md",
+        "permisos/ALCANCE.md",
+        "permisos/matriz.json",
+        "permisos/credenciales.json",
+        "permisos/huellas.json",
+        "permisos/secretos/README.md",
+        "agentes/APPLE_REVIEWER_MZ/",
+        "agentes/GOOGLE_REVIEWER_MZ/",
+        "agentes/SAMSUNG_REVIEWER_MZ/",
+        "agentes/MACOS_REVIEWER_MZ/",
+        "agentes/CRITIC_MZ/",
+        "canal/tareas/"
+      ],
+      "lectura_denegada": [
+        "permisos/secretos/"
+      ],
+      "puede_asignar_a": [
+        "APPLE_REVIEWER_MZ",
+        "GOOGLE_REVIEWER_MZ",
+        "SAMSUNG_REVIEWER_MZ",
+        "MACOS_REVIEWER_MZ",
+        "CRITIC_MZ"
+      ],
+      "puede_entregar_a": [
+        "SUPER_MANAGER_MZ0"
+      ],
+      "puede_revisar_a": [],
+      "puede_escalar_a": [
+        "SUPER_MANAGER_MZ0"
+      ],
+      "puede_decidir_a": [
+        "SUPER_MANAGER_MZ0"
+      ],
+      "tipos_mensaje": [
+        "asignacion",
+        "handoff",
+        "conflicto",
+        "decision"
+      ]
+    },
+    "MANAGER_MZ3_FRONTEND": {
+      "rango": "gerente",
+      "reporta_a": "SUPER_MANAGER_MZ0",
+      "modulo": "frontend",
+      "seccion": "frontend",
+      "escritura": [
+        "agentes/MANAGER_MZ3_FRONTEND/entregables/",
+        "agentes/MANAGER_MZ3_FRONTEND/notas/"
+      ],
+      "lectura": [
+        "README.md",
+        "agentes.md",
+        "agentes/INDICE.md",
+        "agentes/MANAGER_MZ3_FRONTEND/",
+        "memoria/",
+        "canal/estados/",
+        "canal/registro/",
+        "canal/compuertas/",
+        "canal/bandeja/MANAGER_MZ3_FRONTEND/",
+        "canal/ejemplos/",
+        "canal/README.md",
+        "canal/protocolo.md",
+        "canal/flujo.md",
+        "permisos/README.md",
+        "permisos/ALCANCE.md",
+        "permisos/matriz.json",
+        "permisos/credenciales.json",
+        "permisos/huellas.json",
+        "permisos/secretos/README.md",
+        "agentes/FRONTEND_CORE_MZ/",
+        "agentes/MOBILE_FRONTEND_MZ/",
+        "agentes/DESKTOP_FRONTEND_MZ/",
+        "agentes/COMPONENT_MZ/",
+        "agentes/ANIMATION_MZ/",
+        "agentes/ACCESSIBILITY_FRONTEND_MZ/",
+        "canal/tareas/"
+      ],
+      "lectura_denegada": [
+        "permisos/secretos/"
+      ],
+      "puede_asignar_a": [
+        "FRONTEND_CORE_MZ",
+        "MOBILE_FRONTEND_MZ",
+        "DESKTOP_FRONTEND_MZ",
+        "COMPONENT_MZ",
+        "ANIMATION_MZ",
+        "ACCESSIBILITY_FRONTEND_MZ"
+      ],
+      "puede_entregar_a": [
+        "SUPER_MANAGER_MZ0"
+      ],
+      "puede_revisar_a": [],
+      "puede_escalar_a": [
+        "SUPER_MANAGER_MZ0"
+      ],
+      "puede_decidir_a": [],
+      "tipos_mensaje": [
+        "asignacion",
+        "handoff",
+        "conflicto",
+        "coordinacion"
+      ]
+    },
+    "MANAGER_MZ4_BACKEND": {
+      "rango": "gerente",
+      "reporta_a": "SUPER_MANAGER_MZ0",
+      "modulo": "backend",
+      "seccion": "backend",
+      "escritura": [
+        "agentes/MANAGER_MZ4_BACKEND/entregables/",
+        "agentes/MANAGER_MZ4_BACKEND/notas/"
+      ],
+      "lectura": [
+        "README.md",
+        "agentes.md",
+        "agentes/INDICE.md",
+        "agentes/MANAGER_MZ4_BACKEND/",
+        "memoria/",
+        "canal/estados/",
+        "canal/registro/",
+        "canal/compuertas/",
+        "canal/bandeja/MANAGER_MZ4_BACKEND/",
+        "canal/ejemplos/",
+        "canal/README.md",
+        "canal/protocolo.md",
+        "canal/flujo.md",
+        "permisos/README.md",
+        "permisos/ALCANCE.md",
+        "permisos/matriz.json",
+        "permisos/credenciales.json",
+        "permisos/huellas.json",
+        "permisos/secretos/README.md",
+        "agentes/BACKEND_CORE_MZ/",
+        "agentes/DATABASE_MZ/",
+        "agentes/AUTH_MZ/",
+        "agentes/SYNC_MZ/",
+        "agentes/SECURITY_MZ/",
+        "agentes/API_MZ/",
+        "canal/tareas/"
+      ],
+      "lectura_denegada": [
+        "permisos/secretos/"
+      ],
+      "puede_asignar_a": [
+        "BACKEND_CORE_MZ",
+        "DATABASE_MZ",
+        "AUTH_MZ",
+        "SYNC_MZ",
+        "SECURITY_MZ",
+        "API_MZ"
+      ],
+      "puede_entregar_a": [
+        "SUPER_MANAGER_MZ0"
+      ],
+      "puede_revisar_a": [],
+      "puede_escalar_a": [
+        "SUPER_MANAGER_MZ0"
+      ],
+      "puede_decidir_a": [],
+      "tipos_mensaje": [
+        "asignacion",
+        "handoff",
+        "conflicto",
+        "coordinacion"
+      ]
+    },
+    "MANAGER_MZ5_QA": {
+      "rango": "gerente",
+      "reporta_a": "SUPER_MANAGER_MZ0",
+      "modulo": "calidad",
+      "seccion": "calidad",
+      "escritura": [
+        "agentes/MANAGER_MZ5_QA/entregables/",
+        "agentes/MANAGER_MZ5_QA/notas/",
+        "memoria/QA_REPORTS.md"
+      ],
+      "lectura": [
+        "README.md",
+        "agentes.md",
+        "agentes/INDICE.md",
+        "agentes/MANAGER_MZ5_QA/",
+        "memoria/",
+        "canal/estados/",
+        "canal/registro/",
+        "canal/compuertas/",
+        "canal/bandeja/MANAGER_MZ5_QA/",
+        "canal/ejemplos/",
+        "canal/README.md",
+        "canal/protocolo.md",
+        "canal/flujo.md",
+        "permisos/README.md",
+        "permisos/ALCANCE.md",
+        "permisos/matriz.json",
+        "permisos/credenciales.json",
+        "permisos/huellas.json",
+        "permisos/secretos/README.md",
+        "agentes/FUNCTIONAL_QA_MZ/",
+        "agentes/VISUAL_QA_MZ/",
+        "agentes/ACCESSIBILITY_QA_MZ/",
+        "agentes/PERFORMANCE_QA_MZ/",
+        "agentes/REGRESSION_QA_MZ/",
+        "canal/tareas/"
+      ],
+      "lectura_denegada": [
+        "permisos/secretos/"
+      ],
+      "puede_asignar_a": [
+        "FUNCTIONAL_QA_MZ",
+        "VISUAL_QA_MZ",
+        "ACCESSIBILITY_QA_MZ",
+        "PERFORMANCE_QA_MZ",
+        "REGRESSION_QA_MZ"
+      ],
+      "puede_entregar_a": [
+        "SUPER_MANAGER_MZ0"
+      ],
+      "puede_revisar_a": [
+        "SUPER_MANAGER_MZ0"
+      ],
+      "puede_escalar_a": [
+        "SUPER_MANAGER_MZ0"
+      ],
+      "puede_decidir_a": [],
+      "tipos_mensaje": [
+        "asignacion",
+        "handoff",
+        "revision",
+        "conflicto"
+      ]
+    },
+    "BUSCADOR_MZ1": {
+      "rango": "especialista",
+      "reporta_a": "MANAGER_MZ1_RESEARCH",
+      "modulo": "investigacion",
+      "seccion": "busqueda",
+      "escritura": [
+        "agentes/BUSCADOR_MZ1/entregables/",
+        "agentes/BUSCADOR_MZ1/notas/"
+      ],
+      "lectura": [
+        "README.md",
+        "agentes.md",
+        "agentes/INDICE.md",
+        "agentes/BUSCADOR_MZ1/",
+        "memoria/",
+        "canal/estados/",
+        "canal/registro/",
+        "canal/compuertas/",
+        "canal/bandeja/BUSCADOR_MZ1/",
+        "canal/ejemplos/",
+        "canal/README.md",
+        "canal/protocolo.md",
+        "canal/flujo.md",
+        "permisos/README.md",
+        "permisos/ALCANCE.md",
+        "permisos/matriz.json",
+        "permisos/credenciales.json",
+        "permisos/huellas.json",
+        "permisos/secretos/README.md"
+      ],
+      "lectura_denegada": [
+        "permisos/secretos/"
+      ],
+      "puede_asignar_a": [],
+      "puede_entregar_a": [
+        "MANAGER_MZ1_RESEARCH",
+        "ANALYST_MZ2",
+        "TREND_MZ3",
+        "SOURCE_VALIDATOR_MZ4"
+      ],
+      "puede_revisar_a": [],
+      "puede_escalar_a": [
+        "MANAGER_MZ1_RESEARCH"
+      ],
+      "puede_decidir_a": [],
+      "tipos_mensaje": [
+        "handoff",
+        "conflicto"
+      ]
+    },
+    "ANALYST_MZ2": {
+      "rango": "especialista",
+      "reporta_a": "MANAGER_MZ1_RESEARCH",
+      "modulo": "investigacion",
+      "seccion": "analisis",
+      "escritura": [
+        "agentes/ANALYST_MZ2/entregables/",
+        "agentes/ANALYST_MZ2/notas/"
+      ],
+      "lectura": [
+        "README.md",
+        "agentes.md",
+        "agentes/INDICE.md",
+        "agentes/ANALYST_MZ2/",
+        "memoria/",
+        "canal/estados/",
+        "canal/registro/",
+        "canal/compuertas/",
+        "canal/bandeja/ANALYST_MZ2/",
+        "canal/ejemplos/",
+        "canal/README.md",
+        "canal/protocolo.md",
+        "canal/flujo.md",
+        "permisos/README.md",
+        "permisos/ALCANCE.md",
+        "permisos/matriz.json",
+        "permisos/credenciales.json",
+        "permisos/huellas.json",
+        "permisos/secretos/README.md"
+      ],
+      "lectura_denegada": [
+        "permisos/secretos/"
+      ],
+      "puede_asignar_a": [],
+      "puede_entregar_a": [
+        "MANAGER_MZ1_RESEARCH",
+        "TREND_MZ3",
+        "SOURCE_VALIDATOR_MZ4"
+      ],
+      "puede_revisar_a": [],
+      "puede_escalar_a": [
+        "MANAGER_MZ1_RESEARCH"
+      ],
+      "puede_decidir_a": [],
+      "tipos_mensaje": [
+        "handoff",
+        "conflicto"
+      ]
+    },
+    "TREND_MZ3": {
+      "rango": "especialista",
+      "reporta_a": "MANAGER_MZ1_RESEARCH",
+      "modulo": "investigacion",
+      "seccion": "tendencias",
+      "escritura": [
+        "agentes/TREND_MZ3/entregables/",
+        "agentes/TREND_MZ3/notas/"
+      ],
+      "lectura": [
+        "README.md",
+        "agentes.md",
+        "agentes/INDICE.md",
+        "agentes/TREND_MZ3/",
+        "memoria/",
+        "canal/estados/",
+        "canal/registro/",
+        "canal/compuertas/",
+        "canal/bandeja/TREND_MZ3/",
+        "canal/ejemplos/",
+        "canal/README.md",
+        "canal/protocolo.md",
+        "canal/flujo.md",
+        "permisos/README.md",
+        "permisos/ALCANCE.md",
+        "permisos/matriz.json",
+        "permisos/credenciales.json",
+        "permisos/huellas.json",
+        "permisos/secretos/README.md"
+      ],
+      "lectura_denegada": [
+        "permisos/secretos/"
+      ],
+      "puede_asignar_a": [],
+      "puede_entregar_a": [
+        "MANAGER_MZ1_RESEARCH"
+      ],
+      "puede_revisar_a": [],
+      "puede_escalar_a": [
+        "MANAGER_MZ1_RESEARCH"
+      ],
+      "puede_decidir_a": [],
+      "tipos_mensaje": [
+        "handoff",
+        "conflicto"
+      ]
+    },
+    "SOURCE_VALIDATOR_MZ4": {
+      "rango": "especialista",
+      "reporta_a": "MANAGER_MZ1_RESEARCH",
+      "modulo": "investigacion",
+      "seccion": "validacion-de-fuentes",
+      "escritura": [
+        "agentes/SOURCE_VALIDATOR_MZ4/entregables/",
+        "agentes/SOURCE_VALIDATOR_MZ4/notas/"
+      ],
+      "lectura": [
+        "README.md",
+        "agentes.md",
+        "agentes/INDICE.md",
+        "agentes/SOURCE_VALIDATOR_MZ4/",
+        "memoria/",
+        "canal/estados/",
+        "canal/registro/",
+        "canal/compuertas/",
+        "canal/bandeja/SOURCE_VALIDATOR_MZ4/",
+        "canal/ejemplos/",
+        "canal/README.md",
+        "canal/protocolo.md",
+        "canal/flujo.md",
+        "permisos/README.md",
+        "permisos/ALCANCE.md",
+        "permisos/matriz.json",
+        "permisos/credenciales.json",
+        "permisos/huellas.json",
+        "permisos/secretos/README.md"
+      ],
+      "lectura_denegada": [
+        "permisos/secretos/"
+      ],
+      "puede_asignar_a": [],
+      "puede_entregar_a": [
+        "MANAGER_MZ1_RESEARCH",
+        "BUSCADOR_MZ1",
+        "ANALYST_MZ2"
+      ],
+      "puede_revisar_a": [
+        "MANAGER_MZ1_RESEARCH",
+        "BUSCADOR_MZ1",
+        "ANALYST_MZ2"
+      ],
+      "puede_escalar_a": [
+        "MANAGER_MZ1_RESEARCH"
+      ],
+      "puede_decidir_a": [],
+      "tipos_mensaje": [
+        "handoff",
+        "revision",
+        "conflicto"
+      ]
+    },
+    "APPLE_REVIEWER_MZ": {
+      "rango": "especialista",
+      "reporta_a": "MANAGER_MZ2_DESIGN",
+      "modulo": "diseno",
+      "seccion": "revision-apple",
+      "escritura": [
+        "agentes/APPLE_REVIEWER_MZ/entregables/",
+        "agentes/APPLE_REVIEWER_MZ/notas/"
+      ],
+      "lectura": [
+        "README.md",
+        "agentes.md",
+        "agentes/INDICE.md",
+        "agentes/APPLE_REVIEWER_MZ/",
+        "memoria/",
+        "canal/estados/",
+        "canal/registro/",
+        "canal/compuertas/",
+        "canal/bandeja/APPLE_REVIEWER_MZ/",
+        "canal/ejemplos/",
+        "canal/README.md",
+        "canal/protocolo.md",
+        "canal/flujo.md",
+        "permisos/README.md",
+        "permisos/ALCANCE.md",
+        "permisos/matriz.json",
+        "permisos/credenciales.json",
+        "permisos/huellas.json",
+        "permisos/secretos/README.md"
+      ],
+      "lectura_denegada": [
+        "permisos/secretos/"
+      ],
+      "puede_asignar_a": [],
+      "puede_entregar_a": [
+        "MANAGER_MZ2_DESIGN"
+      ],
+      "puede_revisar_a": [
+        "MANAGER_MZ2_DESIGN"
+      ],
+      "puede_escalar_a": [
+        "MANAGER_MZ2_DESIGN"
+      ],
+      "puede_decidir_a": [],
+      "tipos_mensaje": [
+        "handoff",
+        "revision",
+        "conflicto"
+      ]
+    },
+    "GOOGLE_REVIEWER_MZ": {
+      "rango": "especialista",
+      "reporta_a": "MANAGER_MZ2_DESIGN",
+      "modulo": "diseno",
+      "seccion": "revision-google",
+      "escritura": [
+        "agentes/GOOGLE_REVIEWER_MZ/entregables/",
+        "agentes/GOOGLE_REVIEWER_MZ/notas/"
+      ],
+      "lectura": [
+        "README.md",
+        "agentes.md",
+        "agentes/INDICE.md",
+        "agentes/GOOGLE_REVIEWER_MZ/",
+        "memoria/",
+        "canal/estados/",
+        "canal/registro/",
+        "canal/compuertas/",
+        "canal/bandeja/GOOGLE_REVIEWER_MZ/",
+        "canal/ejemplos/",
+        "canal/README.md",
+        "canal/protocolo.md",
+        "canal/flujo.md",
+        "permisos/README.md",
+        "permisos/ALCANCE.md",
+        "permisos/matriz.json",
+        "permisos/credenciales.json",
+        "permisos/huellas.json",
+        "permisos/secretos/README.md"
+      ],
+      "lectura_denegada": [
+        "permisos/secretos/"
+      ],
+      "puede_asignar_a": [],
+      "puede_entregar_a": [
+        "MANAGER_MZ2_DESIGN"
+      ],
+      "puede_revisar_a": [
+        "MANAGER_MZ2_DESIGN"
+      ],
+      "puede_escalar_a": [
+        "MANAGER_MZ2_DESIGN"
+      ],
+      "puede_decidir_a": [],
+      "tipos_mensaje": [
+        "handoff",
+        "revision",
+        "conflicto"
+      ]
+    },
+    "SAMSUNG_REVIEWER_MZ": {
+      "rango": "especialista",
+      "reporta_a": "MANAGER_MZ2_DESIGN",
+      "modulo": "diseno",
+      "seccion": "revision-samsung",
+      "escritura": [
+        "agentes/SAMSUNG_REVIEWER_MZ/entregables/",
+        "agentes/SAMSUNG_REVIEWER_MZ/notas/"
+      ],
+      "lectura": [
+        "README.md",
+        "agentes.md",
+        "agentes/INDICE.md",
+        "agentes/SAMSUNG_REVIEWER_MZ/",
+        "memoria/",
+        "canal/estados/",
+        "canal/registro/",
+        "canal/compuertas/",
+        "canal/bandeja/SAMSUNG_REVIEWER_MZ/",
+        "canal/ejemplos/",
+        "canal/README.md",
+        "canal/protocolo.md",
+        "canal/flujo.md",
+        "permisos/README.md",
+        "permisos/ALCANCE.md",
+        "permisos/matriz.json",
+        "permisos/credenciales.json",
+        "permisos/huellas.json",
+        "permisos/secretos/README.md"
+      ],
+      "lectura_denegada": [
+        "permisos/secretos/"
+      ],
+      "puede_asignar_a": [],
+      "puede_entregar_a": [
+        "MANAGER_MZ2_DESIGN"
+      ],
+      "puede_revisar_a": [
+        "MANAGER_MZ2_DESIGN"
+      ],
+      "puede_escalar_a": [
+        "MANAGER_MZ2_DESIGN"
+      ],
+      "puede_decidir_a": [],
+      "tipos_mensaje": [
+        "handoff",
+        "revision",
+        "conflicto"
+      ]
+    },
+    "MACOS_REVIEWER_MZ": {
+      "rango": "especialista",
+      "reporta_a": "MANAGER_MZ2_DESIGN",
+      "modulo": "diseno",
+      "seccion": "revision-macos",
+      "escritura": [
+        "agentes/MACOS_REVIEWER_MZ/entregables/",
+        "agentes/MACOS_REVIEWER_MZ/notas/"
+      ],
+      "lectura": [
+        "README.md",
+        "agentes.md",
+        "agentes/INDICE.md",
+        "agentes/MACOS_REVIEWER_MZ/",
+        "memoria/",
+        "canal/estados/",
+        "canal/registro/",
+        "canal/compuertas/",
+        "canal/bandeja/MACOS_REVIEWER_MZ/",
+        "canal/ejemplos/",
+        "canal/README.md",
+        "canal/protocolo.md",
+        "canal/flujo.md",
+        "permisos/README.md",
+        "permisos/ALCANCE.md",
+        "permisos/matriz.json",
+        "permisos/credenciales.json",
+        "permisos/huellas.json",
+        "permisos/secretos/README.md"
+      ],
+      "lectura_denegada": [
+        "permisos/secretos/"
+      ],
+      "puede_asignar_a": [],
+      "puede_entregar_a": [
+        "MANAGER_MZ2_DESIGN"
+      ],
+      "puede_revisar_a": [
+        "MANAGER_MZ2_DESIGN"
+      ],
+      "puede_escalar_a": [
+        "MANAGER_MZ2_DESIGN"
+      ],
+      "puede_decidir_a": [],
+      "tipos_mensaje": [
+        "handoff",
+        "revision",
+        "conflicto"
+      ]
+    },
+    "CRITIC_MZ": {
+      "rango": "especialista",
+      "reporta_a": "MANAGER_MZ2_DESIGN",
+      "modulo": "diseno",
+      "seccion": "critica-adversaria",
+      "escritura": [
+        "agentes/CRITIC_MZ/entregables/",
+        "agentes/CRITIC_MZ/notas/"
+      ],
+      "lectura": [
+        "README.md",
+        "agentes.md",
+        "agentes/INDICE.md",
+        "agentes/CRITIC_MZ/",
+        "memoria/",
+        "canal/estados/",
+        "canal/registro/",
+        "canal/compuertas/",
+        "canal/bandeja/CRITIC_MZ/",
+        "canal/ejemplos/",
+        "canal/README.md",
+        "canal/protocolo.md",
+        "canal/flujo.md",
+        "permisos/README.md",
+        "permisos/ALCANCE.md",
+        "permisos/matriz.json",
+        "permisos/credenciales.json",
+        "permisos/huellas.json",
+        "permisos/secretos/README.md"
+      ],
+      "lectura_denegada": [
+        "permisos/secretos/"
+      ],
+      "puede_asignar_a": [],
+      "puede_entregar_a": [
+        "MANAGER_MZ2_DESIGN"
+      ],
+      "puede_revisar_a": [
+        "MANAGER_MZ2_DESIGN"
+      ],
+      "puede_escalar_a": [
+        "MANAGER_MZ2_DESIGN"
+      ],
+      "puede_decidir_a": [],
+      "tipos_mensaje": [
+        "handoff",
+        "revision",
+        "conflicto"
+      ]
+    },
+    "FRONTEND_CORE_MZ": {
+      "rango": "especialista",
+      "reporta_a": "MANAGER_MZ3_FRONTEND",
+      "modulo": "frontend",
+      "seccion": "nucleo-frontend",
+      "escritura": [
+        "agentes/FRONTEND_CORE_MZ/entregables/",
+        "agentes/FRONTEND_CORE_MZ/notas/"
+      ],
+      "lectura": [
+        "README.md",
+        "agentes.md",
+        "agentes/INDICE.md",
+        "agentes/FRONTEND_CORE_MZ/",
+        "memoria/",
+        "canal/estados/",
+        "canal/registro/",
+        "canal/compuertas/",
+        "canal/bandeja/FRONTEND_CORE_MZ/",
+        "canal/ejemplos/",
+        "canal/README.md",
+        "canal/protocolo.md",
+        "canal/flujo.md",
+        "permisos/README.md",
+        "permisos/ALCANCE.md",
+        "permisos/matriz.json",
+        "permisos/credenciales.json",
+        "permisos/huellas.json",
+        "permisos/secretos/README.md"
+      ],
+      "lectura_denegada": [
+        "permisos/secretos/"
+      ],
+      "puede_asignar_a": [],
+      "puede_entregar_a": [
+        "MANAGER_MZ3_FRONTEND"
+      ],
+      "puede_revisar_a": [],
+      "puede_escalar_a": [
+        "MANAGER_MZ3_FRONTEND"
+      ],
+      "puede_decidir_a": [],
+      "tipos_mensaje": [
+        "handoff",
+        "conflicto"
+      ]
+    },
+    "MOBILE_FRONTEND_MZ": {
+      "rango": "especialista",
+      "reporta_a": "MANAGER_MZ3_FRONTEND",
+      "modulo": "frontend",
+      "seccion": "frontend-movil",
+      "escritura": [
+        "agentes/MOBILE_FRONTEND_MZ/entregables/",
+        "agentes/MOBILE_FRONTEND_MZ/notas/"
+      ],
+      "lectura": [
+        "README.md",
+        "agentes.md",
+        "agentes/INDICE.md",
+        "agentes/MOBILE_FRONTEND_MZ/",
+        "memoria/",
+        "canal/estados/",
+        "canal/registro/",
+        "canal/compuertas/",
+        "canal/bandeja/MOBILE_FRONTEND_MZ/",
+        "canal/ejemplos/",
+        "canal/README.md",
+        "canal/protocolo.md",
+        "canal/flujo.md",
+        "permisos/README.md",
+        "permisos/ALCANCE.md",
+        "permisos/matriz.json",
+        "permisos/credenciales.json",
+        "permisos/huellas.json",
+        "permisos/secretos/README.md"
+      ],
+      "lectura_denegada": [
+        "permisos/secretos/"
+      ],
+      "puede_asignar_a": [],
+      "puede_entregar_a": [
+        "MANAGER_MZ3_FRONTEND"
+      ],
+      "puede_revisar_a": [],
+      "puede_escalar_a": [
+        "MANAGER_MZ3_FRONTEND"
+      ],
+      "puede_decidir_a": [],
+      "tipos_mensaje": [
+        "handoff",
+        "conflicto"
+      ]
+    },
+    "DESKTOP_FRONTEND_MZ": {
+      "rango": "especialista",
+      "reporta_a": "MANAGER_MZ3_FRONTEND",
+      "modulo": "frontend",
+      "seccion": "frontend-escritorio",
+      "escritura": [
+        "agentes/DESKTOP_FRONTEND_MZ/entregables/",
+        "agentes/DESKTOP_FRONTEND_MZ/notas/"
+      ],
+      "lectura": [
+        "README.md",
+        "agentes.md",
+        "agentes/INDICE.md",
+        "agentes/DESKTOP_FRONTEND_MZ/",
+        "memoria/",
+        "canal/estados/",
+        "canal/registro/",
+        "canal/compuertas/",
+        "canal/bandeja/DESKTOP_FRONTEND_MZ/",
+        "canal/ejemplos/",
+        "canal/README.md",
+        "canal/protocolo.md",
+        "canal/flujo.md",
+        "permisos/README.md",
+        "permisos/ALCANCE.md",
+        "permisos/matriz.json",
+        "permisos/credenciales.json",
+        "permisos/huellas.json",
+        "permisos/secretos/README.md"
+      ],
+      "lectura_denegada": [
+        "permisos/secretos/"
+      ],
+      "puede_asignar_a": [],
+      "puede_entregar_a": [
+        "MANAGER_MZ3_FRONTEND"
+      ],
+      "puede_revisar_a": [],
+      "puede_escalar_a": [
+        "MANAGER_MZ3_FRONTEND"
+      ],
+      "puede_decidir_a": [],
+      "tipos_mensaje": [
+        "handoff",
+        "conflicto"
+      ]
+    },
+    "COMPONENT_MZ": {
+      "rango": "especialista",
+      "reporta_a": "MANAGER_MZ3_FRONTEND",
+      "modulo": "frontend",
+      "seccion": "componentes",
+      "escritura": [
+        "agentes/COMPONENT_MZ/entregables/",
+        "agentes/COMPONENT_MZ/notas/"
+      ],
+      "lectura": [
+        "README.md",
+        "agentes.md",
+        "agentes/INDICE.md",
+        "agentes/COMPONENT_MZ/",
+        "memoria/",
+        "canal/estados/",
+        "canal/registro/",
+        "canal/compuertas/",
+        "canal/bandeja/COMPONENT_MZ/",
+        "canal/ejemplos/",
+        "canal/README.md",
+        "canal/protocolo.md",
+        "canal/flujo.md",
+        "permisos/README.md",
+        "permisos/ALCANCE.md",
+        "permisos/matriz.json",
+        "permisos/credenciales.json",
+        "permisos/huellas.json",
+        "permisos/secretos/README.md"
+      ],
+      "lectura_denegada": [
+        "permisos/secretos/"
+      ],
+      "puede_asignar_a": [],
+      "puede_entregar_a": [
+        "MANAGER_MZ3_FRONTEND"
+      ],
+      "puede_revisar_a": [],
+      "puede_escalar_a": [
+        "MANAGER_MZ3_FRONTEND"
+      ],
+      "puede_decidir_a": [],
+      "tipos_mensaje": [
+        "handoff",
+        "conflicto"
+      ]
+    },
+    "ANIMATION_MZ": {
+      "rango": "especialista",
+      "reporta_a": "MANAGER_MZ3_FRONTEND",
+      "modulo": "frontend",
+      "seccion": "movimiento",
+      "escritura": [
+        "agentes/ANIMATION_MZ/entregables/",
+        "agentes/ANIMATION_MZ/notas/"
+      ],
+      "lectura": [
+        "README.md",
+        "agentes.md",
+        "agentes/INDICE.md",
+        "agentes/ANIMATION_MZ/",
+        "memoria/",
+        "canal/estados/",
+        "canal/registro/",
+        "canal/compuertas/",
+        "canal/bandeja/ANIMATION_MZ/",
+        "canal/ejemplos/",
+        "canal/README.md",
+        "canal/protocolo.md",
+        "canal/flujo.md",
+        "permisos/README.md",
+        "permisos/ALCANCE.md",
+        "permisos/matriz.json",
+        "permisos/credenciales.json",
+        "permisos/huellas.json",
+        "permisos/secretos/README.md"
+      ],
+      "lectura_denegada": [
+        "permisos/secretos/"
+      ],
+      "puede_asignar_a": [],
+      "puede_entregar_a": [
+        "MANAGER_MZ3_FRONTEND"
+      ],
+      "puede_revisar_a": [],
+      "puede_escalar_a": [
+        "MANAGER_MZ3_FRONTEND"
+      ],
+      "puede_decidir_a": [],
+      "tipos_mensaje": [
+        "handoff",
+        "conflicto"
+      ]
+    },
+    "ACCESSIBILITY_FRONTEND_MZ": {
+      "rango": "especialista",
+      "reporta_a": "MANAGER_MZ3_FRONTEND",
+      "modulo": "frontend",
+      "seccion": "accesibilidad-frontend",
+      "escritura": [
+        "agentes/ACCESSIBILITY_FRONTEND_MZ/entregables/",
+        "agentes/ACCESSIBILITY_FRONTEND_MZ/notas/"
+      ],
+      "lectura": [
+        "README.md",
+        "agentes.md",
+        "agentes/INDICE.md",
+        "agentes/ACCESSIBILITY_FRONTEND_MZ/",
+        "memoria/",
+        "canal/estados/",
+        "canal/registro/",
+        "canal/compuertas/",
+        "canal/bandeja/ACCESSIBILITY_FRONTEND_MZ/",
+        "canal/ejemplos/",
+        "canal/README.md",
+        "canal/protocolo.md",
+        "canal/flujo.md",
+        "permisos/README.md",
+        "permisos/ALCANCE.md",
+        "permisos/matriz.json",
+        "permisos/credenciales.json",
+        "permisos/huellas.json",
+        "permisos/secretos/README.md"
+      ],
+      "lectura_denegada": [
+        "permisos/secretos/"
+      ],
+      "puede_asignar_a": [],
+      "puede_entregar_a": [
+        "MANAGER_MZ3_FRONTEND"
+      ],
+      "puede_revisar_a": [],
+      "puede_escalar_a": [
+        "MANAGER_MZ3_FRONTEND"
+      ],
+      "puede_decidir_a": [],
+      "tipos_mensaje": [
+        "handoff",
+        "conflicto"
+      ]
+    },
+    "BACKEND_CORE_MZ": {
+      "rango": "especialista",
+      "reporta_a": "MANAGER_MZ4_BACKEND",
+      "modulo": "backend",
+      "seccion": "nucleo-backend",
+      "escritura": [
+        "agentes/BACKEND_CORE_MZ/entregables/",
+        "agentes/BACKEND_CORE_MZ/notas/"
+      ],
+      "lectura": [
+        "README.md",
+        "agentes.md",
+        "agentes/INDICE.md",
+        "agentes/BACKEND_CORE_MZ/",
+        "memoria/",
+        "canal/estados/",
+        "canal/registro/",
+        "canal/compuertas/",
+        "canal/bandeja/BACKEND_CORE_MZ/",
+        "canal/ejemplos/",
+        "canal/README.md",
+        "canal/protocolo.md",
+        "canal/flujo.md",
+        "permisos/README.md",
+        "permisos/ALCANCE.md",
+        "permisos/matriz.json",
+        "permisos/credenciales.json",
+        "permisos/huellas.json",
+        "permisos/secretos/README.md"
+      ],
+      "lectura_denegada": [
+        "permisos/secretos/"
+      ],
+      "puede_asignar_a": [],
+      "puede_entregar_a": [
+        "MANAGER_MZ4_BACKEND"
+      ],
+      "puede_revisar_a": [],
+      "puede_escalar_a": [
+        "MANAGER_MZ4_BACKEND"
+      ],
+      "puede_decidir_a": [],
+      "tipos_mensaje": [
+        "handoff",
+        "conflicto"
+      ]
+    },
+    "DATABASE_MZ": {
+      "rango": "especialista",
+      "reporta_a": "MANAGER_MZ4_BACKEND",
+      "modulo": "backend",
+      "seccion": "datos",
+      "escritura": [
+        "agentes/DATABASE_MZ/entregables/",
+        "agentes/DATABASE_MZ/notas/"
+      ],
+      "lectura": [
+        "README.md",
+        "agentes.md",
+        "agentes/INDICE.md",
+        "agentes/DATABASE_MZ/",
+        "memoria/",
+        "canal/estados/",
+        "canal/registro/",
+        "canal/compuertas/",
+        "canal/bandeja/DATABASE_MZ/",
+        "canal/ejemplos/",
+        "canal/README.md",
+        "canal/protocolo.md",
+        "canal/flujo.md",
+        "permisos/README.md",
+        "permisos/ALCANCE.md",
+        "permisos/matriz.json",
+        "permisos/credenciales.json",
+        "permisos/huellas.json",
+        "permisos/secretos/README.md"
+      ],
+      "lectura_denegada": [
+        "permisos/secretos/"
+      ],
+      "puede_asignar_a": [],
+      "puede_entregar_a": [
+        "MANAGER_MZ4_BACKEND"
+      ],
+      "puede_revisar_a": [],
+      "puede_escalar_a": [
+        "MANAGER_MZ4_BACKEND"
+      ],
+      "puede_decidir_a": [],
+      "tipos_mensaje": [
+        "handoff",
+        "conflicto"
+      ]
+    },
+    "AUTH_MZ": {
+      "rango": "especialista",
+      "reporta_a": "MANAGER_MZ4_BACKEND",
+      "modulo": "backend",
+      "seccion": "autenticacion",
+      "escritura": [
+        "agentes/AUTH_MZ/entregables/",
+        "agentes/AUTH_MZ/notas/"
+      ],
+      "lectura": [
+        "README.md",
+        "agentes.md",
+        "agentes/INDICE.md",
+        "agentes/AUTH_MZ/",
+        "memoria/",
+        "canal/estados/",
+        "canal/registro/",
+        "canal/compuertas/",
+        "canal/bandeja/AUTH_MZ/",
+        "canal/ejemplos/",
+        "canal/README.md",
+        "canal/protocolo.md",
+        "canal/flujo.md",
+        "permisos/README.md",
+        "permisos/ALCANCE.md",
+        "permisos/matriz.json",
+        "permisos/credenciales.json",
+        "permisos/huellas.json",
+        "permisos/secretos/README.md"
+      ],
+      "lectura_denegada": [
+        "permisos/secretos/"
+      ],
+      "puede_asignar_a": [],
+      "puede_entregar_a": [
+        "MANAGER_MZ4_BACKEND"
+      ],
+      "puede_revisar_a": [],
+      "puede_escalar_a": [
+        "MANAGER_MZ4_BACKEND"
+      ],
+      "puede_decidir_a": [],
+      "tipos_mensaje": [
+        "handoff",
+        "conflicto"
+      ]
+    },
+    "SYNC_MZ": {
+      "rango": "especialista",
+      "reporta_a": "MANAGER_MZ4_BACKEND",
+      "modulo": "backend",
+      "seccion": "sincronizacion",
+      "escritura": [
+        "agentes/SYNC_MZ/entregables/",
+        "agentes/SYNC_MZ/notas/"
+      ],
+      "lectura": [
+        "README.md",
+        "agentes.md",
+        "agentes/INDICE.md",
+        "agentes/SYNC_MZ/",
+        "memoria/",
+        "canal/estados/",
+        "canal/registro/",
+        "canal/compuertas/",
+        "canal/bandeja/SYNC_MZ/",
+        "canal/ejemplos/",
+        "canal/README.md",
+        "canal/protocolo.md",
+        "canal/flujo.md",
+        "permisos/README.md",
+        "permisos/ALCANCE.md",
+        "permisos/matriz.json",
+        "permisos/credenciales.json",
+        "permisos/huellas.json",
+        "permisos/secretos/README.md"
+      ],
+      "lectura_denegada": [
+        "permisos/secretos/"
+      ],
+      "puede_asignar_a": [],
+      "puede_entregar_a": [
+        "MANAGER_MZ4_BACKEND"
+      ],
+      "puede_revisar_a": [],
+      "puede_escalar_a": [
+        "MANAGER_MZ4_BACKEND"
+      ],
+      "puede_decidir_a": [],
+      "tipos_mensaje": [
+        "handoff",
+        "conflicto"
+      ]
+    },
+    "SECURITY_MZ": {
+      "rango": "especialista",
+      "reporta_a": "MANAGER_MZ4_BACKEND",
+      "modulo": "backend",
+      "seccion": "seguridad",
+      "escritura": [
+        "agentes/SECURITY_MZ/entregables/",
+        "agentes/SECURITY_MZ/notas/"
+      ],
+      "lectura": [
+        "README.md",
+        "agentes.md",
+        "agentes/INDICE.md",
+        "agentes/SECURITY_MZ/",
+        "memoria/",
+        "canal/estados/",
+        "canal/registro/",
+        "canal/compuertas/",
+        "canal/bandeja/SECURITY_MZ/",
+        "canal/ejemplos/",
+        "canal/README.md",
+        "canal/protocolo.md",
+        "canal/flujo.md",
+        "permisos/README.md",
+        "permisos/ALCANCE.md",
+        "permisos/matriz.json",
+        "permisos/credenciales.json",
+        "permisos/huellas.json",
+        "permisos/secretos/README.md"
+      ],
+      "lectura_denegada": [
+        "permisos/secretos/"
+      ],
+      "puede_asignar_a": [],
+      "puede_entregar_a": [
+        "MANAGER_MZ4_BACKEND"
+      ],
+      "puede_revisar_a": [],
+      "puede_escalar_a": [
+        "MANAGER_MZ4_BACKEND"
+      ],
+      "puede_decidir_a": [],
+      "tipos_mensaje": [
+        "handoff",
+        "conflicto"
+      ]
+    },
+    "API_MZ": {
+      "rango": "especialista",
+      "reporta_a": "MANAGER_MZ4_BACKEND",
+      "modulo": "backend",
+      "seccion": "api",
+      "escritura": [
+        "agentes/API_MZ/entregables/",
+        "agentes/API_MZ/notas/"
+      ],
+      "lectura": [
+        "README.md",
+        "agentes.md",
+        "agentes/INDICE.md",
+        "agentes/API_MZ/",
+        "memoria/",
+        "canal/estados/",
+        "canal/registro/",
+        "canal/compuertas/",
+        "canal/bandeja/API_MZ/",
+        "canal/ejemplos/",
+        "canal/README.md",
+        "canal/protocolo.md",
+        "canal/flujo.md",
+        "permisos/README.md",
+        "permisos/ALCANCE.md",
+        "permisos/matriz.json",
+        "permisos/credenciales.json",
+        "permisos/huellas.json",
+        "permisos/secretos/README.md"
+      ],
+      "lectura_denegada": [
+        "permisos/secretos/"
+      ],
+      "puede_asignar_a": [],
+      "puede_entregar_a": [
+        "MANAGER_MZ4_BACKEND"
+      ],
+      "puede_revisar_a": [],
+      "puede_escalar_a": [
+        "MANAGER_MZ4_BACKEND"
+      ],
+      "puede_decidir_a": [],
+      "tipos_mensaje": [
+        "handoff",
+        "conflicto"
+      ]
+    },
+    "FUNCTIONAL_QA_MZ": {
+      "rango": "especialista",
+      "reporta_a": "MANAGER_MZ5_QA",
+      "modulo": "calidad",
+      "seccion": "qa-funcional",
+      "escritura": [
+        "agentes/FUNCTIONAL_QA_MZ/entregables/",
+        "agentes/FUNCTIONAL_QA_MZ/notas/"
+      ],
+      "lectura": [
+        "README.md",
+        "agentes.md",
+        "agentes/INDICE.md",
+        "agentes/FUNCTIONAL_QA_MZ/",
+        "memoria/",
+        "canal/estados/",
+        "canal/registro/",
+        "canal/compuertas/",
+        "canal/bandeja/FUNCTIONAL_QA_MZ/",
+        "canal/ejemplos/",
+        "canal/README.md",
+        "canal/protocolo.md",
+        "canal/flujo.md",
+        "permisos/README.md",
+        "permisos/ALCANCE.md",
+        "permisos/matriz.json",
+        "permisos/credenciales.json",
+        "permisos/huellas.json",
+        "permisos/secretos/README.md"
+      ],
+      "lectura_denegada": [
+        "permisos/secretos/"
+      ],
+      "puede_asignar_a": [],
+      "puede_entregar_a": [
+        "MANAGER_MZ5_QA"
+      ],
+      "puede_revisar_a": [
+        "MANAGER_MZ5_QA"
+      ],
+      "puede_escalar_a": [
+        "MANAGER_MZ5_QA"
+      ],
+      "puede_decidir_a": [],
+      "tipos_mensaje": [
+        "handoff",
+        "revision",
+        "conflicto"
+      ]
+    },
+    "VISUAL_QA_MZ": {
+      "rango": "especialista",
+      "reporta_a": "MANAGER_MZ5_QA",
+      "modulo": "calidad",
+      "seccion": "qa-visual",
+      "escritura": [
+        "agentes/VISUAL_QA_MZ/entregables/",
+        "agentes/VISUAL_QA_MZ/notas/"
+      ],
+      "lectura": [
+        "README.md",
+        "agentes.md",
+        "agentes/INDICE.md",
+        "agentes/VISUAL_QA_MZ/",
+        "memoria/",
+        "canal/estados/",
+        "canal/registro/",
+        "canal/compuertas/",
+        "canal/bandeja/VISUAL_QA_MZ/",
+        "canal/ejemplos/",
+        "canal/README.md",
+        "canal/protocolo.md",
+        "canal/flujo.md",
+        "permisos/README.md",
+        "permisos/ALCANCE.md",
+        "permisos/matriz.json",
+        "permisos/credenciales.json",
+        "permisos/huellas.json",
+        "permisos/secretos/README.md"
+      ],
+      "lectura_denegada": [
+        "permisos/secretos/"
+      ],
+      "puede_asignar_a": [],
+      "puede_entregar_a": [
+        "MANAGER_MZ5_QA"
+      ],
+      "puede_revisar_a": [
+        "MANAGER_MZ5_QA"
+      ],
+      "puede_escalar_a": [
+        "MANAGER_MZ5_QA"
+      ],
+      "puede_decidir_a": [],
+      "tipos_mensaje": [
+        "handoff",
+        "revision",
+        "conflicto"
+      ]
+    },
+    "ACCESSIBILITY_QA_MZ": {
+      "rango": "especialista",
+      "reporta_a": "MANAGER_MZ5_QA",
+      "modulo": "calidad",
+      "seccion": "qa-accesibilidad",
+      "escritura": [
+        "agentes/ACCESSIBILITY_QA_MZ/entregables/",
+        "agentes/ACCESSIBILITY_QA_MZ/notas/"
+      ],
+      "lectura": [
+        "README.md",
+        "agentes.md",
+        "agentes/INDICE.md",
+        "agentes/ACCESSIBILITY_QA_MZ/",
+        "memoria/",
+        "canal/estados/",
+        "canal/registro/",
+        "canal/compuertas/",
+        "canal/bandeja/ACCESSIBILITY_QA_MZ/",
+        "canal/ejemplos/",
+        "canal/README.md",
+        "canal/protocolo.md",
+        "canal/flujo.md",
+        "permisos/README.md",
+        "permisos/ALCANCE.md",
+        "permisos/matriz.json",
+        "permisos/credenciales.json",
+        "permisos/huellas.json",
+        "permisos/secretos/README.md"
+      ],
+      "lectura_denegada": [
+        "permisos/secretos/"
+      ],
+      "puede_asignar_a": [],
+      "puede_entregar_a": [
+        "MANAGER_MZ5_QA"
+      ],
+      "puede_revisar_a": [
+        "MANAGER_MZ5_QA"
+      ],
+      "puede_escalar_a": [
+        "MANAGER_MZ5_QA"
+      ],
+      "puede_decidir_a": [],
+      "tipos_mensaje": [
+        "handoff",
+        "revision",
+        "conflicto"
+      ]
+    },
+    "PERFORMANCE_QA_MZ": {
+      "rango": "especialista",
+      "reporta_a": "MANAGER_MZ5_QA",
+      "modulo": "calidad",
+      "seccion": "qa-rendimiento",
+      "escritura": [
+        "agentes/PERFORMANCE_QA_MZ/entregables/",
+        "agentes/PERFORMANCE_QA_MZ/notas/"
+      ],
+      "lectura": [
+        "README.md",
+        "agentes.md",
+        "agentes/INDICE.md",
+        "agentes/PERFORMANCE_QA_MZ/",
+        "memoria/",
+        "canal/estados/",
+        "canal/registro/",
+        "canal/compuertas/",
+        "canal/bandeja/PERFORMANCE_QA_MZ/",
+        "canal/ejemplos/",
+        "canal/README.md",
+        "canal/protocolo.md",
+        "canal/flujo.md",
+        "permisos/README.md",
+        "permisos/ALCANCE.md",
+        "permisos/matriz.json",
+        "permisos/credenciales.json",
+        "permisos/huellas.json",
+        "permisos/secretos/README.md"
+      ],
+      "lectura_denegada": [
+        "permisos/secretos/"
+      ],
+      "puede_asignar_a": [],
+      "puede_entregar_a": [
+        "MANAGER_MZ5_QA"
+      ],
+      "puede_revisar_a": [
+        "MANAGER_MZ5_QA"
+      ],
+      "puede_escalar_a": [
+        "MANAGER_MZ5_QA"
+      ],
+      "puede_decidir_a": [],
+      "tipos_mensaje": [
+        "handoff",
+        "revision",
+        "conflicto"
+      ]
+    },
+    "REGRESSION_QA_MZ": {
+      "rango": "especialista",
+      "reporta_a": "MANAGER_MZ5_QA",
+      "modulo": "calidad",
+      "seccion": "qa-regresion",
+      "escritura": [
+        "agentes/REGRESSION_QA_MZ/entregables/",
+        "agentes/REGRESSION_QA_MZ/notas/"
+      ],
+      "lectura": [
+        "README.md",
+        "agentes.md",
+        "agentes/INDICE.md",
+        "agentes/REGRESSION_QA_MZ/",
+        "memoria/",
+        "canal/estados/",
+        "canal/registro/",
+        "canal/compuertas/",
+        "canal/bandeja/REGRESSION_QA_MZ/",
+        "canal/ejemplos/",
+        "canal/README.md",
+        "canal/protocolo.md",
+        "canal/flujo.md",
+        "permisos/README.md",
+        "permisos/ALCANCE.md",
+        "permisos/matriz.json",
+        "permisos/credenciales.json",
+        "permisos/huellas.json",
+        "permisos/secretos/README.md"
+      ],
+      "lectura_denegada": [
+        "permisos/secretos/"
+      ],
+      "puede_asignar_a": [],
+      "puede_entregar_a": [
+        "MANAGER_MZ5_QA"
+      ],
+      "puede_revisar_a": [
+        "MANAGER_MZ5_QA"
+      ],
+      "puede_escalar_a": [
+        "MANAGER_MZ5_QA"
+      ],
+      "puede_decidir_a": [],
+      "tipos_mensaje": [
+        "handoff",
+        "revision",
+        "conflicto"
+      ]
+    }
+  }
+}

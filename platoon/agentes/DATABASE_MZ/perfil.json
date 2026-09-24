@@ -1,0 +1,11 @@
+{
+  "agent_id": "DATABASE_MZ",
+  "rango": "especialista",
+  "reporta_a": "MANAGER_MZ4_BACKEND",
+  "modulo": "backend",
+  "seccion": "datos",
+  "credential_id": "cred_database_mz",
+  "compuerta": null,
+  "equipo": [],
+  "tareas": "TAREAS.md"
+}

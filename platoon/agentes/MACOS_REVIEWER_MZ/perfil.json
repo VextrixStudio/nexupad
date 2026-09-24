@@ -1,0 +1,11 @@
+{
+  "agent_id": "MACOS_REVIEWER_MZ",
+  "rango": "especialista",
+  "reporta_a": "MANAGER_MZ2_DESIGN",
+  "modulo": "diseno",
+  "seccion": "revision-macos",
+  "credential_id": "cred_macos_reviewer_mz",
+  "compuerta": null,
+  "equipo": [],
+  "tareas": "TAREAS.md"
+}

@@ -1,0 +1,18 @@
+{
+  "agent_id": "MANAGER_MZ4_BACKEND",
+  "rango": "gerente",
+  "reporta_a": "SUPER_MANAGER_MZ0",
+  "modulo": "backend",
+  "seccion": "backend",
+  "credential_id": "cred_manager_mz4_backend",
+  "compuerta": null,
+  "equipo": [
+    "BACKEND_CORE_MZ",
+    "DATABASE_MZ",
+    "AUTH_MZ",
+    "SYNC_MZ",
+    "SECURITY_MZ",
+    "API_MZ"
+  ],
+  "tareas": "TAREAS.md"
+}

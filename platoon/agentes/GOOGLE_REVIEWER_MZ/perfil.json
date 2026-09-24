@@ -1,0 +1,11 @@
+{
+  "agent_id": "GOOGLE_REVIEWER_MZ",
+  "rango": "especialista",
+  "reporta_a": "MANAGER_MZ2_DESIGN",
+  "modulo": "diseno",
+  "seccion": "revision-google",
+  "credential_id": "cred_google_reviewer_mz",
+  "compuerta": null,
+  "equipo": [],
+  "tareas": "TAREAS.md"
+}

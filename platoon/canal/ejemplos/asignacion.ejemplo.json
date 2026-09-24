@@ -1,0 +1,28 @@
+{
+  "_ejemplo": true,
+  "_aviso": "Formato de §40. No es una tarea real. Publicarlo sin --simular está rechazado.",
+  "type": "asignacion",
+  "to": "MANAGER_MZ2_DESIGN",
+  "task_id": "NXP-9001",
+  "body": {
+    "task_id": "NXP-9001",
+    "objective": "Ejemplo de objetivo. No encargar: definir la dirección de una pantalla todavía no pedida.",
+    "manager": "MANAGER_MZ2_DESIGN",
+    "priority": "high",
+    "dependencies": [
+      "research complete"
+    ],
+    "constraints": [
+      "mobile-first",
+      "preserve existing functionality",
+      "limited liquid glass"
+    ],
+    "deliverables": [
+      "design specification",
+      "component list",
+      "responsive behavior"
+    ],
+    "review_required": true,
+    "ui_change": "none"
+  }
+}

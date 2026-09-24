@@ -1,0 +1,295 @@
+{
+  "version": 1,
+  "emision": "2026-09-24",
+  "aviso": "Este directorio no contiene secretos. Cada secreto está solo en el archivo local gitignored del agente.",
+  "agentes": {
+    "SUPER_MANAGER_MZ0": {
+      "credential_id": "cred_super_manager_mz0",
+      "modulo": "comando",
+      "seccion": "comando",
+      "rango": "comando",
+      "reporta_a": null,
+      "variable_entorno": "NEXUPAD_TOKEN_SUPER_MANAGER_MZ0",
+      "archivo_secreto": "permisos/secretos/SUPER_MANAGER_MZ0.token"
+    },
+    "MANAGER_MZ1_RESEARCH": {
+      "credential_id": "cred_manager_mz1_research",
+      "modulo": "investigacion",
+      "seccion": "investigacion",
+      "rango": "gerente",
+      "reporta_a": "SUPER_MANAGER_MZ0",
+      "variable_entorno": "NEXUPAD_TOKEN_MANAGER_MZ1_RESEARCH",
+      "archivo_secreto": "permisos/secretos/MANAGER_MZ1_RESEARCH.token"
+    },
+    "MANAGER_MZ2_DESIGN": {
+      "credential_id": "cred_manager_mz2_design",
+      "modulo": "diseno",
+      "seccion": "diseno",
+      "rango": "gerente",
+      "reporta_a": "SUPER_MANAGER_MZ0",
+      "variable_entorno": "NEXUPAD_TOKEN_MANAGER_MZ2_DESIGN",
+      "archivo_secreto": "permisos/secretos/MANAGER_MZ2_DESIGN.token"
+    },
+    "MANAGER_MZ3_FRONTEND": {
+      "credential_id": "cred_manager_mz3_frontend",
+      "modulo": "frontend",
+      "seccion": "frontend",
+      "rango": "gerente",
+      "reporta_a": "SUPER_MANAGER_MZ0",
+      "variable_entorno": "NEXUPAD_TOKEN_MANAGER_MZ3_FRONTEND",
+      "archivo_secreto": "permisos/secretos/MANAGER_MZ3_FRONTEND.token"
+    },
+    "MANAGER_MZ4_BACKEND": {
+      "credential_id": "cred_manager_mz4_backend",
+      "modulo": "backend",
+      "seccion": "backend",
+      "rango": "gerente",
+      "reporta_a": "SUPER_MANAGER_MZ0",
+      "variable_entorno": "NEXUPAD_TOKEN_MANAGER_MZ4_BACKEND",
+      "archivo_secreto": "permisos/secretos/MANAGER_MZ4_BACKEND.token"
+    },
+    "MANAGER_MZ5_QA": {
+      "credential_id": "cred_manager_mz5_qa",
+      "modulo": "calidad",
+      "seccion": "calidad",
+      "rango": "gerente",
+      "reporta_a": "SUPER_MANAGER_MZ0",
+      "variable_entorno": "NEXUPAD_TOKEN_MANAGER_MZ5_QA",
+      "archivo_secreto": "permisos/secretos/MANAGER_MZ5_QA.token"
+    },
+    "BUSCADOR_MZ1": {
+      "credential_id": "cred_buscador_mz1",
+      "modulo": "investigacion",
+      "seccion": "busqueda",
+      "rango": "especialista",
+      "reporta_a": "MANAGER_MZ1_RESEARCH",
+      "variable_entorno": "NEXUPAD_TOKEN_BUSCADOR_MZ1",
+      "archivo_secreto": "permisos/secretos/BUSCADOR_MZ1.token"
+    },
+    "ANALYST_MZ2": {
+      "credential_id": "cred_analyst_mz2",
+      "modulo": "investigacion",
+      "seccion": "analisis",
+      "rango": "especialista",
+      "reporta_a": "MANAGER_MZ1_RESEARCH",
+      "variable_entorno": "NEXUPAD_TOKEN_ANALYST_MZ2",
+      "archivo_secreto": "permisos/secretos/ANALYST_MZ2.token"
+    },
+    "TREND_MZ3": {
+      "credential_id": "cred_trend_mz3",
+      "modulo": "investigacion",
+      "seccion": "tendencias",
+      "rango": "especialista",
+      "reporta_a": "MANAGER_MZ1_RESEARCH",
+      "variable_entorno": "NEXUPAD_TOKEN_TREND_MZ3",
+      "archivo_secreto": "permisos/secretos/TREND_MZ3.token"
+    },
+    "SOURCE_VALIDATOR_MZ4": {
+      "credential_id": "cred_source_validator_mz4",
+      "modulo": "investigacion",
+      "seccion": "validacion-de-fuentes",
+      "rango": "especialista",
+      "reporta_a": "MANAGER_MZ1_RESEARCH",
+      "variable_entorno": "NEXUPAD_TOKEN_SOURCE_VALIDATOR_MZ4",
+      "archivo_secreto": "permisos/secretos/SOURCE_VALIDATOR_MZ4.token"
+    },
+    "APPLE_REVIEWER_MZ": {
+      "credential_id": "cred_apple_reviewer_mz",
+      "modulo": "diseno",
+      "seccion": "revision-apple",
+      "rango": "especialista",
+      "reporta_a": "MANAGER_MZ2_DESIGN",
+      "variable_entorno": "NEXUPAD_TOKEN_APPLE_REVIEWER_MZ",
+      "archivo_secreto": "permisos/secretos/APPLE_REVIEWER_MZ.token"
+    },
+    "GOOGLE_REVIEWER_MZ": {
+      "credential_id": "cred_google_reviewer_mz",
+      "modulo": "diseno",
+      "seccion": "revision-google",
+      "rango": "especialista",
+      "reporta_a": "MANAGER_MZ2_DESIGN",
+      "variable_entorno": "NEXUPAD_TOKEN_GOOGLE_REVIEWER_MZ",
+      "archivo_secreto": "permisos/secretos/GOOGLE_REVIEWER_MZ.token"
+    },
+    "SAMSUNG_REVIEWER_MZ": {
+      "credential_id": "cred_samsung_reviewer_mz",
+      "modulo": "diseno",
+      "seccion": "revision-samsung",
+      "rango": "especialista",
+      "reporta_a": "MANAGER_MZ2_DESIGN",
+      "variable_entorno": "NEXUPAD_TOKEN_SAMSUNG_REVIEWER_MZ",
+      "archivo_secreto": "permisos/secretos/SAMSUNG_REVIEWER_MZ.token"
+    },
+    "MACOS_REVIEWER_MZ": {
+      "credential_id": "cred_macos_reviewer_mz",
+      "modulo": "diseno",
+      "seccion": "revision-macos",
+      "rango": "especialista",
+      "reporta_a": "MANAGER_MZ2_DESIGN",
+      "variable_entorno": "NEXUPAD_TOKEN_MACOS_REVIEWER_MZ",
+      "archivo_secreto": "permisos/secretos/MACOS_REVIEWER_MZ.token"
+    },
+    "CRITIC_MZ": {
+      "credential_id": "cred_critic_mz",
+      "modulo": "diseno",
+      "seccion": "critica-adversaria",
+      "rango": "especialista",
+      "reporta_a": "MANAGER_MZ2_DESIGN",
+      "variable_entorno": "NEXUPAD_TOKEN_CRITIC_MZ",
+      "archivo_secreto": "permisos/secretos/CRITIC_MZ.token"
+    },
+    "FRONTEND_CORE_MZ": {
+      "credential_id": "cred_frontend_core_mz",
+      "modulo": "frontend",
+      "seccion": "nucleo-frontend",
+      "rango": "especialista",
+      "reporta_a": "MANAGER_MZ3_FRONTEND",
+      "variable_entorno": "NEXUPAD_TOKEN_FRONTEND_CORE_MZ",
+      "archivo_secreto": "permisos/secretos/FRONTEND_CORE_MZ.token"
+    },
+    "MOBILE_FRONTEND_MZ": {
+      "credential_id": "cred_mobile_frontend_mz",
+      "modulo": "frontend",
+      "seccion": "frontend-movil",
+      "rango": "especialista",
+      "reporta_a": "MANAGER_MZ3_FRONTEND",
+      "variable_entorno": "NEXUPAD_TOKEN_MOBILE_FRONTEND_MZ",
+      "archivo_secreto": "permisos/secretos/MOBILE_FRONTEND_MZ.token"
+    },
+    "DESKTOP_FRONTEND_MZ": {
+      "credential_id": "cred_desktop_frontend_mz",
+      "modulo": "frontend",
+      "seccion": "frontend-escritorio",
+      "rango": "especialista",
+      "reporta_a": "MANAGER_MZ3_FRONTEND",
+      "variable_entorno": "NEXUPAD_TOKEN_DESKTOP_FRONTEND_MZ",
+      "archivo_secreto": "permisos/secretos/DESKTOP_FRONTEND_MZ.token"
+    },
+    "COMPONENT_MZ": {
+      "credential_id": "cred_component_mz",
+      "modulo": "frontend",
+      "seccion": "componentes",
+      "rango": "especialista",
+      "reporta_a": "MANAGER_MZ3_FRONTEND",
+      "variable_entorno": "NEXUPAD_TOKEN_COMPONENT_MZ",
+      "archivo_secreto": "permisos/secretos/COMPONENT_MZ.token"
+    },
+    "ANIMATION_MZ": {
+      "credential_id": "cred_animation_mz",
+      "modulo": "frontend",
+      "seccion": "movimiento",
+      "rango": "especialista",
+      "reporta_a": "MANAGER_MZ3_FRONTEND",
+      "variable_entorno": "NEXUPAD_TOKEN_ANIMATION_MZ",
+      "archivo_secreto": "permisos/secretos/ANIMATION_MZ.token"
+    },
+    "ACCESSIBILITY_FRONTEND_MZ": {
+      "credential_id": "cred_accessibility_frontend_mz",
+      "modulo": "frontend",
+      "seccion": "accesibilidad-frontend",
+      "rango": "especialista",
+      "reporta_a": "MANAGER_MZ3_FRONTEND",
+      "variable_entorno": "NEXUPAD_TOKEN_ACCESSIBILITY_FRONTEND_MZ",
+      "archivo_secreto": "permisos/secretos/ACCESSIBILITY_FRONTEND_MZ.token"
+    },
+    "BACKEND_CORE_MZ": {
+      "credential_id": "cred_backend_core_mz",
+      "modulo": "backend",
+      "seccion": "nucleo-backend",
+      "rango": "especialista",
+      "reporta_a": "MANAGER_MZ4_BACKEND",
+      "variable_entorno": "NEXUPAD_TOKEN_BACKEND_CORE_MZ",
+      "archivo_secreto": "permisos/secretos/BACKEND_CORE_MZ.token"
+    },
+    "DATABASE_MZ": {
+      "credential_id": "cred_database_mz",
+      "modulo": "backend",
+      "seccion": "datos",
+      "rango": "especialista",
+      "reporta_a": "MANAGER_MZ4_BACKEND",
+      "variable_entorno": "NEXUPAD_TOKEN_DATABASE_MZ",
+      "archivo_secreto": "permisos/secretos/DATABASE_MZ.token"
+    },
+    "AUTH_MZ": {
+      "credential_id": "cred_auth_mz",
+      "modulo": "backend",
+      "seccion": "autenticacion",
+      "rango": "especialista",
+      "reporta_a": "MANAGER_MZ4_BACKEND",
+      "variable_entorno": "NEXUPAD_TOKEN_AUTH_MZ",
+      "archivo_secreto": "permisos/secretos/AUTH_MZ.token"
+    },
+    "SYNC_MZ": {
+      "credential_id": "cred_sync_mz",
+      "modulo": "backend",
+      "seccion": "sincronizacion",
+      "rango": "especialista",
+      "reporta_a": "MANAGER_MZ4_BACKEND",
+      "variable_entorno": "NEXUPAD_TOKEN_SYNC_MZ",
+      "archivo_secreto": "permisos/secretos/SYNC_MZ.token"
+    },
+    "SECURITY_MZ": {
+      "credential_id": "cred_security_mz",
+      "modulo": "backend",
+      "seccion": "seguridad",
+      "rango": "especialista",
+      "reporta_a": "MANAGER_MZ4_BACKEND",
+      "variable_entorno": "NEXUPAD_TOKEN_SECURITY_MZ",
+      "archivo_secreto": "permisos/secretos/SECURITY_MZ.token"
+    },
+    "API_MZ": {
+      "credential_id": "cred_api_mz",
+      "modulo": "backend",
+      "seccion": "api",
+      "rango": "especialista",
+      "reporta_a": "MANAGER_MZ4_BACKEND",
+      "variable_entorno": "NEXUPAD_TOKEN_API_MZ",
+      "archivo_secreto": "permisos/secretos/API_MZ.token"
+    },
+    "FUNCTIONAL_QA_MZ": {
+      "credential_id": "cred_functional_qa_mz",
+      "modulo": "calidad",
+      "seccion": "qa-funcional",
+      "rango": "especialista",
+      "reporta_a": "MANAGER_MZ5_QA",
+      "variable_entorno": "NEXUPAD_TOKEN_FUNCTIONAL_QA_MZ",
+      "archivo_secreto": "permisos/secretos/FUNCTIONAL_QA_MZ.token"
+    },
+    "VISUAL_QA_MZ": {
+      "credential_id": "cred_visual_qa_mz",
+      "modulo": "calidad",
+      "seccion": "qa-visual",
+      "rango": "especialista",
+      "reporta_a": "MANAGER_MZ5_QA",
+      "variable_entorno": "NEXUPAD_TOKEN_VISUAL_QA_MZ",
+      "archivo_secreto": "permisos/secretos/VISUAL_QA_MZ.token"
+    },
+    "ACCESSIBILITY_QA_MZ": {
+      "credential_id": "cred_accessibility_qa_mz",
+      "modulo": "calidad",
+      "seccion": "qa-accesibilidad",
+      "rango": "especialista",
+      "reporta_a": "MANAGER_MZ5_QA",
+      "variable_entorno": "NEXUPAD_TOKEN_ACCESSIBILITY_QA_MZ",
+      "archivo_secreto": "permisos/secretos/ACCESSIBILITY_QA_MZ.token"
+    },
+    "PERFORMANCE_QA_MZ": {
+      "credential_id": "cred_performance_qa_mz",
+      "modulo": "calidad",
+      "seccion": "qa-rendimiento",
+      "rango": "especialista",
+      "reporta_a": "MANAGER_MZ5_QA",
+      "variable_entorno": "NEXUPAD_TOKEN_PERFORMANCE_QA_MZ",
+      "archivo_secreto": "permisos/secretos/PERFORMANCE_QA_MZ.token"
+    },
+    "REGRESSION_QA_MZ": {
+      "credential_id": "cred_regression_qa_mz",
+      "modulo": "calidad",
+      "seccion": "qa-regresion",
+      "rango": "especialista",
+      "reporta_a": "MANAGER_MZ5_QA",
+      "variable_entorno": "NEXUPAD_TOKEN_REGRESSION_QA_MZ",
+      "archivo_secreto": "permisos/secretos/REGRESSION_QA_MZ.token"
+    }
+  }
+}

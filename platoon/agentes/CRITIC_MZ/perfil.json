@@ -1,0 +1,11 @@
+{
+  "agent_id": "CRITIC_MZ",
+  "rango": "especialista",
+  "reporta_a": "MANAGER_MZ2_DESIGN",
+  "modulo": "diseno",
+  "seccion": "critica-adversaria",
+  "credential_id": "cred_critic_mz",
+  "compuerta": null,
+  "equipo": [],
+  "tareas": "TAREAS.md"
+}

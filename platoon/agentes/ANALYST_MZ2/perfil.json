@@ -1,0 +1,11 @@
+{
+  "agent_id": "ANALYST_MZ2",
+  "rango": "especialista",
+  "reporta_a": "MANAGER_MZ1_RESEARCH",
+  "modulo": "investigacion",
+  "seccion": "analisis",
+  "credential_id": "cred_analyst_mz2",
+  "compuerta": null,
+  "equipo": [],
+  "tareas": "TAREAS.md"
+}

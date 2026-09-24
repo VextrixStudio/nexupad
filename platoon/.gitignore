@@ -1,0 +1,4 @@
+# Sección 58. Los secretos del pelotón no se confirman.
+permisos/secretos/*.token
+.env
+*.env

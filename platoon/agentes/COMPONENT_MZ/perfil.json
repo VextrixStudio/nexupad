@@ -1,0 +1,11 @@
+{
+  "agent_id": "COMPONENT_MZ",
+  "rango": "especialista",
+  "reporta_a": "MANAGER_MZ3_FRONTEND",
+  "modulo": "frontend",
+  "seccion": "componentes",
+  "credential_id": "cred_component_mz",
+  "compuerta": null,
+  "equipo": [],
+  "tareas": "TAREAS.md"
+}

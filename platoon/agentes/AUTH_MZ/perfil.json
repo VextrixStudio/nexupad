@@ -1,0 +1,11 @@
+{
+  "agent_id": "AUTH_MZ",
+  "rango": "especialista",
+  "reporta_a": "MANAGER_MZ4_BACKEND",
+  "modulo": "backend",
+  "seccion": "autenticacion",
+  "credential_id": "cred_auth_mz",
+  "compuerta": null,
+  "equipo": [],
+  "tareas": "TAREAS.md"
+}

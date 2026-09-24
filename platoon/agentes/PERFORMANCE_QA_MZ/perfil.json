@@ -1,0 +1,11 @@
+{
+  "agent_id": "PERFORMANCE_QA_MZ",
+  "rango": "especialista",
+  "reporta_a": "MANAGER_MZ5_QA",
+  "modulo": "calidad",
+  "seccion": "qa-rendimiento",
+  "credential_id": "cred_performance_qa_mz",
+  "compuerta": "PERFORMANCE_QA",
+  "equipo": [],
+  "tareas": "TAREAS.md"
+}

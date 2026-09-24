@@ -1,0 +1,18 @@
+{
+  "agent_id": "MANAGER_MZ3_FRONTEND",
+  "rango": "gerente",
+  "reporta_a": "SUPER_MANAGER_MZ0",
+  "modulo": "frontend",
+  "seccion": "frontend",
+  "credential_id": "cred_manager_mz3_frontend",
+  "compuerta": null,
+  "equipo": [
+    "FRONTEND_CORE_MZ",
+    "MOBILE_FRONTEND_MZ",
+    "DESKTOP_FRONTEND_MZ",
+    "COMPONENT_MZ",
+    "ANIMATION_MZ",
+    "ACCESSIBILITY_FRONTEND_MZ"
+  ],
+  "tareas": "TAREAS.md"
+}

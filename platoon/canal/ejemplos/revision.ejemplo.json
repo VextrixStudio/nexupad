@@ -1,0 +1,18 @@
+{
+  "_ejemplo": true,
+  "_aviso": "Revisión independiente. No es un informe real y no es un voto.",
+  "type": "revision",
+  "to": "MANAGER_MZ2_DESIGN",
+  "task_id": "NXP-9001",
+  "body": {
+    "summary": "Ejemplo de revisión: el material de plantilla no es una propuesta de producto.",
+    "findings": [
+      "No hay especificación que criticar en este archivo de ejemplo."
+    ],
+    "evidence": [
+      "Se revisó solo esta plantilla, no una pantalla de NexuPad."
+    ],
+    "verdict": "observaciones",
+    "copied_interface": false
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "agent_id": "SUPER_MANAGER_MZ0",
+  "rango": "comando",
+  "reporta_a": null,
+  "modulo": "comando",
+  "seccion": "comando",
+  "credential_id": "cred_super_manager_mz0",
+  "compuerta": null,
+  "equipo": [],
+  "tareas": "TAREAS.md"
+}

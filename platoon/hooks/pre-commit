@@ -1,0 +1,10 @@
+#!/bin/sh
+# Especificación §58: no confirmar credenciales.
+staged=$(git diff --cached --name-only --diff-filter=ACMR)
+blocked=$(printf '%s\n' "$staged" | grep -E '(^|/)permisos/secretos/.*\.token$|(^|/)\.env$|\.token$' || true)
+if [ -n "$blocked" ]; then
+  echo "Secreto bloqueado (especificación §58). No se confirman credenciales:" >&2
+  printf '%s\n' "$blocked" >&2
+  exit 1
+fi
+exit 0

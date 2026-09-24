@@ -1,0 +1,11 @@
+{
+  "agent_id": "VISUAL_QA_MZ",
+  "rango": "especialista",
+  "reporta_a": "MANAGER_MZ5_QA",
+  "modulo": "calidad",
+  "seccion": "qa-visual",
+  "credential_id": "cred_visual_qa_mz",
+  "compuerta": "VISUAL_QA",
+  "equipo": [],
+  "tareas": "TAREAS.md"
+}

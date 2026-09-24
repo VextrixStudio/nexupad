@@ -1,0 +1,11 @@
+{
+  "agent_id": "BUSCADOR_MZ1",
+  "rango": "especialista",
+  "reporta_a": "MANAGER_MZ1_RESEARCH",
+  "modulo": "investigacion",
+  "seccion": "busqueda",
+  "credential_id": "cred_buscador_mz1",
+  "compuerta": null,
+  "equipo": [],
+  "tareas": "TAREAS.md"
+}

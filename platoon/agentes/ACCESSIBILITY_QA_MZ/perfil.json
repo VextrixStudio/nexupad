@@ -1,0 +1,11 @@
+{
+  "agent_id": "ACCESSIBILITY_QA_MZ",
+  "rango": "especialista",
+  "reporta_a": "MANAGER_MZ5_QA",
+  "modulo": "calidad",
+  "seccion": "qa-accesibilidad",
+  "credential_id": "cred_accessibility_qa_mz",
+  "compuerta": "ACCESSIBILITY_QA",
+  "equipo": [],
+  "tareas": "TAREAS.md"
+}

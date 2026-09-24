@@ -1,0 +1,22 @@
+{
+  "_ejemplo": true,
+  "_aviso": "Formato de §41. No es una entrega real.",
+  "type": "handoff",
+  "to": "ANALYST_MZ2",
+  "task_id": "NXP-9001",
+  "body": {
+    "TASK": "NXP-9001",
+    "STATUS": "entregado",
+    "WHAT WAS INVESTIGATED": "Ejemplo: no se consultó ninguna fuente para redactar esta plantilla.",
+    "WHAT WAS CHANGED": "Nada. Este archivo es una plantilla de formato.",
+    "DECISIONS": "Ninguna decisión de producto.",
+    "EVIDENCE": [
+      "La plantilla solo demuestra los campos obligatorios de la sección 41."
+    ],
+    "FILES AFFECTED": [],
+    "DEPENDENCIES": [],
+    "RISKS": "Publicar el ejemplo como si fuera investigación violaría la sección 63.",
+    "OPEN QUESTIONS": [],
+    "NEXT AGENT": "ANALYST_MZ2"
+  }
+}

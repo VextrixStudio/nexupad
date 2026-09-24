@@ -1,0 +1,11 @@
+{
+  "agent_id": "BACKEND_CORE_MZ",
+  "rango": "especialista",
+  "reporta_a": "MANAGER_MZ4_BACKEND",
+  "modulo": "backend",
+  "seccion": "nucleo-backend",
+  "credential_id": "cred_backend_core_mz",
+  "compuerta": null,
+  "equipo": [],
+  "tareas": "TAREAS.md"
+}

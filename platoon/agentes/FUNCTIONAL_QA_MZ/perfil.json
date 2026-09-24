@@ -1,0 +1,11 @@
+{
+  "agent_id": "FUNCTIONAL_QA_MZ",
+  "rango": "especialista",
+  "reporta_a": "MANAGER_MZ5_QA",
+  "modulo": "calidad",
+  "seccion": "qa-funcional",
+  "credential_id": "cred_functional_qa_mz",
+  "compuerta": "FUNCTIONAL_QA",
+  "equipo": [],
+  "tareas": "TAREAS.md"
+}

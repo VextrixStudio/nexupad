@@ -1,0 +1,17 @@
+{
+  "agent_id": "MANAGER_MZ5_QA",
+  "rango": "gerente",
+  "reporta_a": "SUPER_MANAGER_MZ0",
+  "modulo": "calidad",
+  "seccion": "calidad",
+  "credential_id": "cred_manager_mz5_qa",
+  "compuerta": null,
+  "equipo": [
+    "FUNCTIONAL_QA_MZ",
+    "VISUAL_QA_MZ",
+    "ACCESSIBILITY_QA_MZ",
+    "PERFORMANCE_QA_MZ",
+    "REGRESSION_QA_MZ"
+  ],
+  "tareas": "TAREAS.md"
+}

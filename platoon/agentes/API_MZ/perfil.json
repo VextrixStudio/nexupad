@@ -1,0 +1,11 @@
+{
+  "agent_id": "API_MZ",
+  "rango": "especialista",
+  "reporta_a": "MANAGER_MZ4_BACKEND",
+  "modulo": "backend",
+  "seccion": "api",
+  "credential_id": "cred_api_mz",
+  "compuerta": null,
+  "equipo": [],
+  "tareas": "TAREAS.md"
+}

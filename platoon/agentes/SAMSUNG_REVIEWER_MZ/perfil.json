@@ -1,0 +1,11 @@
+{
+  "agent_id": "SAMSUNG_REVIEWER_MZ",
+  "rango": "especialista",
+  "reporta_a": "MANAGER_MZ2_DESIGN",
+  "modulo": "diseno",
+  "seccion": "revision-samsung",
+  "credential_id": "cred_samsung_reviewer_mz",
+  "compuerta": null,
+  "equipo": [],
+  "tareas": "TAREAS.md"
+}

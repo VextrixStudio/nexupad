@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "algoritmo": "sha256",
+  "aviso": "Huella del secreto, no el secreto. Sirve para detectar alteración. No autentica por sí sola.",
+  "agentes": {
+    "SUPER_MANAGER_MZ0": {
+      "sha256": "62515ffac6f9709be0a33ea74ee930a23c39002a6788a4c8de5db065317dc82e"
+    },
+    "MANAGER_MZ1_RESEARCH": {
+      "sha256": "cf09bd16fba887a439fee88272e1023d1e992fb3d24a1744a171404a537a38dc"
+    },
+    "MANAGER_MZ2_DESIGN": {
+      "sha256": "afe796fb79cc6da0362e0561328af8155876f6db6141d9ecd71742ad01c0a0e7"
+    },
+    "MANAGER_MZ3_FRONTEND": {
+      "sha256": "1f3f30fe207dc1abb596a43634c01346469022f52e7a53b5099ac1a4099a42ee"
+    },
+    "MANAGER_MZ4_BACKEND": {
+      "sha256": "a292f44058b71712c2f5487b44fa87993beb68f5987bdd12f921667753d333d9"
+    },
+    "MANAGER_MZ5_QA": {
+      "sha256": "53618b676450cddb47cf2395904cc19065d3e350b485f1d6cda30c50cd29fe17"
+    },
+    "BUSCADOR_MZ1": {
+      "sha256": "73499a4decc3b6a382734d104fe4848aec09ecc6ed99810c4155472d7640ecba"
+    },
+    "ANALYST_MZ2": {
+      "sha256": "b026e6e26771074c8df121a9b4e3a75dec68dde4d62bf4311fec275ab03ba51c"
+    },
+    "TREND_MZ3": {
+      "sha256": "0c94c2a14df0c13cd0783741b100d464bd7483d6d9d953a73c33d6bc473d9781"
+    },
+    "SOURCE_VALIDATOR_MZ4": {
+      "sha256": "fb2a3781306854eca0197b5ac6858b9bc2fcb3a1ddba0e4388977b4bbf070bb4"
+    },
+    "APPLE_REVIEWER_MZ": {
+      "sha256": "7f27fbcf3fac3ae7632baca872bacc9defb5db329720eb88e41ac01a2ef79583"
+    },
+    "GOOGLE_REVIEWER_MZ": {
+      "sha256": "4b1a53f674b87612c3a4a50c1fb67b22eab3e0718bd6099ef956cd262e322b49"
+    },
+    "SAMSUNG_REVIEWER_MZ": {
+      "sha256": "644591fae0f3abe6f008dbd0c74e8b21ede61c37aacfbe1ea086ffed4869302a"
+    },
+    "MACOS_REVIEWER_MZ": {
+      "sha256": "0bfd03c4be2f27c05dcc25c1af651fb38f229c481172119314958d0e935b5820"
+    },
+    "CRITIC_MZ": {
+      "sha256": "37da482d2ba55aadb388a9411cb0964bd27dec4fd4d89b04bc1c52446c66cb6f"
+    },
+    "FRONTEND_CORE_MZ": {
+      "sha256": "cbaa38f2d8bd25373f7d6b1123e62d755422a3de99837909912500c8d8a564ce"
+    },
+    "MOBILE_FRONTEND_MZ": {
+      "sha256": "3aa13d902546a01d8c0e43e3914d66626c433e26346d6742d4bcdbe82b3c9b31"
+    },
+    "DESKTOP_FRONTEND_MZ": {
+      "sha256": "906bc4e9c33a34b82493a04f2bb61385354954fcb924e9860ff68cdc023f8df3"
+    },
+    "COMPONENT_MZ": {
+      "sha256": "1b0cfccaca34bc7ddbd498a49ad85ac961d552012a64cae26786b1b6c4e05a09"
+    },
+    "ANIMATION_MZ": {
+      "sha256": "73bdda52776f220aeec4e733a88b5d29294795a4995aedd4156265cf84282bb2"
+    },
+    "ACCESSIBILITY_FRONTEND_MZ": {
+      "sha256": "63fdb49439a4d6f9d4c487276dc190e15ebe7ae0cb5a30569d85b2b09dc756e4"
+    },
+    "BACKEND_CORE_MZ": {
+      "sha256": "90390806299d51d705d5be1b9edb915295141f4fa23533321142b4af8c8a0887"
+    },
+    "DATABASE_MZ": {
+      "sha256": "b9c44ab3c3f454a7f65f1c5384c9a8d17a32f315c850d966594fdd16a41abcae"
+    },
+    "AUTH_MZ": {
+      "sha256": "d9f73e653e87b8b3b81c390c088e264c5fcc8db3d7df58c34334ad7e7e4beae5"
+    },
+    "SYNC_MZ": {
+      "sha256": "ebb87b6557b591db8721fc52107ac5bdaad5b8b91117911a96cace0cfc20c9be"
+    },
+    "SECURITY_MZ": {
+      "sha256": "ff929253d076d4530a9fb3f6d73570d4e5639a77979be2107379957f1180e3f0"
+    },
+    "API_MZ": {
+      "sha256": "bbca9593343e93dc00806e602101c37a55ead52cd770fccfed0c7ff95006b419"
+    },
+    "FUNCTIONAL_QA_MZ": {
+      "sha256": "6f7fd368d02948ecfdc821ab7b58cf18a07dced275cb12073558070c2f734785"
+    },
+    "VISUAL_QA_MZ": {
+      "sha256": "7d2c02d1c52d2f2cd9be01b7fc9309fe34bfa69386596c607a5988ee3c187482"
+    },
+    "ACCESSIBILITY_QA_MZ": {
+      "sha256": "91b615a6ca74dbc6251dd015eabea0dd3c0749b2a32fdfa30513b98e99b4d943"
+    },
+    "PERFORMANCE_QA_MZ": {
+      "sha256": "d6b67e842809e82855103fd4c03ea8db671b886803c755d216de58e154f69839"
+    },
+    "REGRESSION_QA_MZ": {
+      "sha256": "7c81e50e1c3a25f3243e6f40aef9eaef8dda3204d966a7e9e6967702b0ee36ac"
+    }
+  }
+}

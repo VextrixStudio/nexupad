@@ -1,0 +1,11 @@
+{
+  "agent_id": "REGRESSION_QA_MZ",
+  "rango": "especialista",
+  "reporta_a": "MANAGER_MZ5_QA",
+  "modulo": "calidad",
+  "seccion": "qa-regresion",
+  "credential_id": "cred_regression_qa_mz",
+  "compuerta": "REGRESSION_QA",
+  "equipo": [],
+  "tareas": "TAREAS.md"
+}

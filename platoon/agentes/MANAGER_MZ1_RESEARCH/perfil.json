@@ -1,0 +1,16 @@
+{
+  "agent_id": "MANAGER_MZ1_RESEARCH",
+  "rango": "gerente",
+  "reporta_a": "SUPER_MANAGER_MZ0",
+  "modulo": "investigacion",
+  "seccion": "investigacion",
+  "credential_id": "cred_manager_mz1_research",
+  "compuerta": null,
+  "equipo": [
+    "BUSCADOR_MZ1",
+    "ANALYST_MZ2",
+    "TREND_MZ3",
+    "SOURCE_VALIDATOR_MZ4"
+  ],
+  "tareas": "TAREAS.md"
+}

@@ -1,0 +1,11 @@
+{
+  "agent_id": "SOURCE_VALIDATOR_MZ4",
+  "rango": "especialista",
+  "reporta_a": "MANAGER_MZ1_RESEARCH",
+  "modulo": "investigacion",
+  "seccion": "validacion-de-fuentes",
+  "credential_id": "cred_source_validator_mz4",
+  "compuerta": null,
+  "equipo": [],
+  "tareas": "TAREAS.md"
+}

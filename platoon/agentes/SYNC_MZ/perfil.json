@@ -1,0 +1,11 @@
+{
+  "agent_id": "SYNC_MZ",
+  "rango": "especialista",
+  "reporta_a": "MANAGER_MZ4_BACKEND",
+  "modulo": "backend",
+  "seccion": "sincronizacion",
+  "credential_id": "cred_sync_mz",
+  "compuerta": null,
+  "equipo": [],
+  "tareas": "TAREAS.md"
+}

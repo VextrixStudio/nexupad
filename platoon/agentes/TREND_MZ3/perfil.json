@@ -1,0 +1,11 @@
+{
+  "agent_id": "TREND_MZ3",
+  "rango": "especialista",
+  "reporta_a": "MANAGER_MZ1_RESEARCH",
+  "modulo": "investigacion",
+  "seccion": "tendencias",
+  "credential_id": "cred_trend_mz3",
+  "compuerta": null,
+  "equipo": [],
+  "tareas": "TAREAS.md"
+}
